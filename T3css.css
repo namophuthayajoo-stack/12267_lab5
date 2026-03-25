@@ -1,0 +1,115 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* ===== HERO ===== */
+.hero {
+  width: 100%;
+  height: 100vh;
+
+  /* 🔥 เปลี่ยนพื้นหลัง */
+  background-image: url('pic/bg.jpg');
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== NAVBAR ===== */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+}
+
+.logo {
+  width: 140px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* ===== CONTENT ===== */
+.content {
+  padding: 60px; /* 🔥 เพิ่ม padding */
+  max-width: 600px;
+}
+
+/* 🔥 ปรับ h1 */
+.content h1 {
+  font-size: 64px;
+  margin-bottom: 20px;
+}
+
+/* 🔥 เปลี่ยนสี p */
+.content p {
+  color: #555;
+  margin-bottom: 25px;
+}
+
+/* ===== BUTTON ===== */
+.btn {
+  display: inline-block;
+
+  /* 🔥 gradient */
+  background: linear-gradient(to right, #ff4b2b, #ff416c);
+
+  color: #fff;
+  padding: 12px 25px;
+  text-decoration: none;
+
+  /* 🔥 มุมโค้ง */
+  border-radius: 30px;
+
+  transition: 0.3s;
+}
+
+/* 🔥 hover */
+.btn:hover {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  transform: scale(1.05);
+}
+
+/* login */
+.login-btn {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #333;
+}
+
+/* ===== IMAGE ===== */
+.Features-img {
+  position: absolute;
+  right: 80px;
+  bottom: 0;
+  width: 400px;
+}
+
+/* ===== ANIMATION ===== */
+.anim {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: moveup 0.8s linear forwards;
+}
+
+@keyframes moveup {
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
